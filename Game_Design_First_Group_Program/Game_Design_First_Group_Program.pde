@@ -14,10 +14,10 @@ If player a releases “s”, set a_y_speed to 0
 If player a releases “a”, set a_x_speed to 0
 If player a releases “w”, set a_y_speed to 0
 
-If player b releases “k”, set b_x_speed to 0
-If player b releases “j”, set b_y_speed to 0
-If player b releases “h”, set b_x_speed to 0
-If player b releases “u”, set b_y_speed to 0
+If player b releases “l”, set b_x_speed to 0
+If player b releases “k”, set b_y_speed to 0
+If player b releases “j”, set b_x_speed to 0
+If player b releases “i”, set b_y_speed to 0
 
 change a_x_position by a_x_speed
 change a_y_position by a_y_speed
@@ -45,12 +45,12 @@ A circle is drawn at b_x_position and b_y_position with a width of 30 and a heig
 //set up variables
 int a_x_speed = 0;
 int a_y_speed = 0;
-int a_x_position = 0;
+int a_x_position = -1;
 int a_y_position = 0;
 
 int b_x_speed = 0;
 int b_y_speed = 0;
-int b_x_position = 0;
+int b_x_position = -1;
 int b_y_position = 0;
 
 void setup(){
@@ -74,16 +74,16 @@ void keyPressed(){
   if(key == 'w'){
      a_y_speed = -5;
   }
-    if(key == 'k'){
+    if(key == 'l'){
      b_x_speed = 5;
   }
-  if(key == 'j'){
+  if(key == 'k'){
      b_y_speed = 5;
   }
-  if(key == 'h'){
+  if(key == 'j'){
      b_x_speed = -5;
   }
-  if(key == 'u'){
+  if(key == 'i'){
      b_y_speed = -5;
   }
 }
@@ -101,16 +101,16 @@ void keyReleased(){
   if(key == 'w'){
      a_y_speed = 0;
   }
-    if(key == 'k'){
+    if(key == 'l'){
      b_x_speed = 0;
   }
-  if(key == 'j'){
+  if(key == 'k'){
      b_y_speed = 0;
   }
-  if(key == 'h'){
+  if(key == 'j'){
      b_x_speed = 0;
   }
-  if(key == 'u'){
+  if(key == 'i'){
      b_y_speed = 0;
   }
 }
